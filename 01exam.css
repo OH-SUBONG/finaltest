@@ -1,0 +1,102 @@
+.page {
+  font-family: "Malgun Gothic", "맑은 고딕", Helvetica, Dotum, 돋움, Arial,
+    sans-serif;
+  width: 1000px;
+  height: 900px;
+  padding: 30px 24px 0;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  margin-top: -170px;
+  margin-left: -130px;
+}
+.info {
+  text-align: center;
+}
+.name {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.photo {
+  height: 100px;
+  right: 100px;
+}
+.photo img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.info ul {
+  padding-top: 10px;
+}
+.Educationbox {
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.list {
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.cube {
+  animation: rotate 7000ms linear infinite;
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  transform-style: preserve-3d;
+  right: 700px;
+  top: 0;
+  width: 100px;
+  line-height: 98px;
+  text-align: center;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(360deg) rotateX(720deg) rotateZ(1080deg);
+  }
+}
+.face {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.front {
+  background: rgb(238, 234, 234);
+  transform: translateZ(50px);
+}
+.back {
+  background: rgb(240, 237, 237);
+  transform: translateZ(-50px);
+}
+.left {
+  background: rgb(241, 234, 234);
+  transform: translateX(-50px) rotateY(90deg);
+}
+.right {
+  background: rgb(238, 235, 235);
+  transform: translateX(50px) rotateY(90deg);
+}
+.top {
+  background: rgb(241, 237, 237);
+  transform: translateY(-50px) rotateX(90deg);
+}
+.bottom {
+  background: rgb(235, 227, 227);
+  transform: translateY(50px) rotateX(90deg);
+}
